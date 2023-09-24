@@ -13,6 +13,7 @@ module.exports = (env, argv) => {
 
   const plugins = () => {
     const base = [
+      // '@babel/plugin-proposal-class-properties',
       new HtmlWebpackPlugin({
         template: './index.html',
       }),
