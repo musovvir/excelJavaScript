@@ -13,15 +13,7 @@ const filename = (ext) => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
 
 const jsLoaders = () => {
 
-  return [
-    {
-      loader: 'babel-loader',
-      options: {
-        presets: ['@babel/preset-env'],
-        plugins: ['@babel/plugin-proposal-class-properties']
-      }
-    }
-  ]
+  return ['babel-loader']
 }
 
 const jsPlugins = () => {
